@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Traductor Web</title>
+	<link rel="stylesheet" href="traductor.css">
+</head>
+<body>
+	<h1>Traductor Web</h1>
+	
+	<form>
+        <label for="idioma-entrada">Idioma de entrada:</label>
+        <select id="idioma-entrada">
+			<option value="en">Inglés</option>
+			<option value="es">Español</option>
+			<option value="fr">Francés</option>
+			<option value="de">Alemán</option>
+		</select>
+        <br>
+   
+        <label for="texto-entrada">Texto de entrada:</label>
+     
+		<textarea id="texto-entrada"></textarea>
+		
+		
+
+        		
+		<label for="idioma-salida">Idioma de salida:</label>
+		<select id="idioma-salida">
+			<option value="en">Inglés</option>
+			<option value="es">Español</option>
+			<option value="fr">Francés</option>
+			<option value="de">Alemán</option>
+		
+		</select>
+        
+
+		<label for="texto-salida">Texto de salida:</label>
+		<textarea id="texto-salida" readonly></textarea>
+		
+		
+		
+
+		
+		<button type="button" onclick="traducir()">Traducir</button>
+		<button type="button" id="escuchar" >Escuchar</button>
+       
+	</form>
+	
+	
+	<script type="text/JavaScript" src="traductor.js"></script>
+	<script type="text/JavaScript" src="escuchar.js"></script>
+</body>
+</html>
